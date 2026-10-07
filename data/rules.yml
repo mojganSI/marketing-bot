@@ -1,0 +1,174 @@
+version: "3.1"
+
+# Une règle = une question reconnue -> une réponse du bot.
+
+rules:
+- rule: greet fr
+  steps:
+  - intent: greet_fr
+  - action: utter_greet_fr
+
+- rule: greet en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+
+- rule: goodbye fr
+  steps:
+  - intent: goodbye_fr
+  - action: utter_goodbye_fr
+
+- rule: goodbye en
+  steps:
+  - intent: goodbye_en
+  - action: utter_goodbye_en
+
+- rule: thanks fr
+  steps:
+  - intent: thanks_fr
+  - action: utter_thanks_fr
+
+- rule: thanks en
+  steps:
+  - intent: thanks_en
+  - action: utter_thanks_en
+
+- rule: bot_challenge fr
+  steps:
+  - intent: bot_challenge_fr
+  - action: utter_iamabot_fr
+
+- rule: bot_challenge en
+  steps:
+  - intent: bot_challenge_en
+  - action: utter_iamabot_en
+
+- rule: help fr
+  steps:
+  - intent: help_fr
+  - action: utter_help_fr
+
+- rule: help en
+  steps:
+  - intent: help_en
+  - action: utter_help_en
+
+- rule: marketing_definition fr
+  steps:
+  - intent: marketing_definition_fr
+  - action: utter_marketing_definition_fr
+
+- rule: marketing_definition en
+  steps:
+  - intent: marketing_definition_en
+  - action: utter_marketing_definition_en
+
+- rule: strategy fr
+  steps:
+  - intent: strategy_fr
+  - action: utter_strategy_fr
+
+- rule: strategy en
+  steps:
+  - intent: strategy_en
+  - action: utter_strategy_en
+
+- rule: seo fr
+  steps:
+  - intent: seo_fr
+  - action: utter_seo_fr
+
+- rule: seo en
+  steps:
+  - intent: seo_en
+  - action: utter_seo_en
+
+- rule: social_media fr
+  steps:
+  - intent: social_media_fr
+  - action: utter_social_media_fr
+
+- rule: social_media en
+  steps:
+  - intent: social_media_en
+  - action: utter_social_media_en
+
+- rule: email_marketing fr
+  steps:
+  - intent: email_marketing_fr
+  - action: utter_email_marketing_fr
+
+- rule: email_marketing en
+  steps:
+  - intent: email_marketing_en
+  - action: utter_email_marketing_en
+
+- rule: content_marketing fr
+  steps:
+  - intent: content_marketing_fr
+  - action: utter_content_marketing_fr
+
+- rule: content_marketing en
+  steps:
+  - intent: content_marketing_en
+  - action: utter_content_marketing_en
+
+- rule: paid_ads fr
+  steps:
+  - intent: paid_ads_fr
+  - action: utter_paid_ads_fr
+
+- rule: paid_ads en
+  steps:
+  - intent: paid_ads_en
+  - action: utter_paid_ads_en
+
+- rule: target_audience fr
+  steps:
+  - intent: target_audience_fr
+  - action: utter_target_audience_fr
+
+- rule: target_audience en
+  steps:
+  - intent: target_audience_en
+  - action: utter_target_audience_en
+
+- rule: budget fr
+  steps:
+  - intent: budget_fr
+  - action: utter_budget_fr
+
+- rule: budget en
+  steps:
+  - intent: budget_en
+  - action: utter_budget_en
+
+- rule: kpi fr
+  steps:
+  - intent: kpi_fr
+  - action: utter_kpi_fr
+
+- rule: kpi en
+  steps:
+  - intent: kpi_en
+  - action: utter_kpi_en
+
+- rule: lead_generation fr
+  steps:
+  - intent: lead_generation_fr
+  - action: utter_lead_generation_fr
+
+- rule: lead_generation en
+  steps:
+  - intent: lead_generation_en
+  - action: utter_lead_generation_en
+
+- rule: message non compris
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+- rule: hors sujet
+  steps:
+  - intent: out_of_scope
+  - action: utter_fallback
