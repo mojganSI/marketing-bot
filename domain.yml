@@ -1,0 +1,143 @@
+version: "3.1"
+
+intents:
+  - greet_fr
+  - greet_en
+  - goodbye_fr
+  - goodbye_en
+  - thanks_fr
+  - thanks_en
+  - bot_challenge_fr
+  - bot_challenge_en
+  - help_fr
+  - help_en
+  - marketing_definition_fr
+  - marketing_definition_en
+  - strategy_fr
+  - strategy_en
+  - seo_fr
+  - seo_en
+  - social_media_fr
+  - social_media_en
+  - email_marketing_fr
+  - email_marketing_en
+  - content_marketing_fr
+  - content_marketing_en
+  - paid_ads_fr
+  - paid_ads_en
+  - target_audience_fr
+  - target_audience_en
+  - budget_fr
+  - budget_en
+  - kpi_fr
+  - kpi_en
+  - lead_generation_fr
+  - lead_generation_en
+  - out_of_scope
+
+# Les réponses du bot. Modifie le texte ici pour le personnaliser.
+responses:
+  # ---------- Conversation de base ----------
+  utter_greet_fr:
+    - text: "Bonjour ! Je suis ton assistant marketing. Pose-moi une question, ou écris « aide » pour voir les sujets."
+
+  utter_greet_en:
+    - text: "Hello! I am your marketing assistant. Ask me a question, or type \"help\" to see the topics."
+
+  utter_goodbye_fr:
+    - text: "Au revoir et bonne réussite avec ton marketing !"
+
+  utter_goodbye_en:
+    - text: "Goodbye, and good luck with your marketing!"
+
+  utter_thanks_fr:
+    - text: "Avec plaisir ! Une autre question ?"
+
+  utter_thanks_en:
+    - text: "You're welcome! Any other question?"
+
+  utter_iamabot_fr:
+    - text: "Je suis un robot spécialisé en marketing pour les entreprises."
+
+  utter_iamabot_en:
+    - text: "I am a bot specialised in marketing for businesses."
+
+  utter_help_fr:
+    - text: "Je peux t'aider sur : la définition du marketing, la stratégie, le SEO, les réseaux sociaux, l'emailing, le contenu, la publicité payante, la cible, le budget, les KPI et la recherche de clients. Pose ta question !"
+
+  utter_help_en:
+    - text: "I can help with: what marketing is, strategy, SEO, social media, email marketing, content, paid ads, target audience, budget, KPIs and finding customers. Ask your question!"
+
+  utter_fallback:
+    - text: "Désolé, je réponds seulement aux questions de marketing. Écris « aide » pour voir les sujets.\nSorry, I only answer marketing questions. Type \"help\" to see the topics."
+
+  # ---------- Sujets marketing ----------
+  utter_marketing_definition_fr:
+    - text: "Le marketing, c'est tout ce que tu fais pour faire connaître ton offre aux bonnes personnes et leur donner envie d'acheter : comprendre tes clients, choisir ton message, puis le diffuser sur les bons canaux."
+
+  utter_marketing_definition_en:
+    - text: "Marketing is everything you do to make the right people know your offer and want to buy it: understand your customers, choose your message, then share it on the right channels."
+
+  utter_strategy_fr:
+    - text: "Une stratégie marketing en 5 étapes :\n1. Fixe un objectif chiffré (ex. 20 clients par mois).\n2. Définis ta cible.\n3. Choisis ton message : quel problème tu résous.\n4. Choisis 1 ou 2 canaux, pas plus au début.\n5. Mesure les résultats et ajuste chaque mois."
+
+  utter_strategy_en:
+    - text: "A marketing strategy in 5 steps:\n1. Set a measurable goal (e.g. 20 customers per month).\n2. Define your target audience.\n3. Choose your message: which problem you solve.\n4. Pick 1 or 2 channels, no more at the start.\n5. Measure the results and adjust every month."
+
+  utter_seo_fr:
+    - text: "Le SEO sert à apparaître sur Google sans payer. Les bases :\n- Choisis les mots-clés que tes clients tapent vraiment.\n- Écris une page utile par sujet.\n- Soigne les titres et la vitesse du site.\n- Obtiens des liens depuis d'autres sites.\nCompte 3 à 6 mois pour voir des résultats."
+
+  utter_seo_en:
+    - text: "SEO helps you show up on Google without paying. The basics:\n- Pick the keywords your customers really type.\n- Write one useful page per topic.\n- Take care of titles and site speed.\n- Get links from other websites.\nAllow 3 to 6 months to see results."
+
+  utter_social_media_fr:
+    - text: "Sur les réseaux sociaux, va là où sont tes clients : LinkedIn pour le B2B, Instagram et TikTok pour le grand public. Choisis un seul réseau au début, publie régulièrement (2 à 3 fois par semaine) et réponds aux commentaires."
+
+  utter_social_media_en:
+    - text: "On social media, go where your customers are: LinkedIn for B2B, Instagram and TikTok for consumers. Start with a single network, post regularly (2 to 3 times a week) and reply to comments."
+
+  utter_email_marketing_fr:
+    - text: "Pour l'emailing :\n- Collecte les adresses avec l'accord des personnes (RGPD).\n- Écris un objet court et clair.\n- Un seul message et un seul bouton par email.\n- Envoie à un rythme régulier, par exemple une fois par semaine.\n- Regarde le taux d'ouverture et le taux de clic."
+
+  utter_email_marketing_en:
+    - text: "For email marketing:\n- Collect addresses with people's consent (GDPR).\n- Write a short, clear subject line.\n- One message and one button per email.\n- Send on a regular schedule, for example once a week.\n- Watch the open rate and the click rate."
+
+  utter_content_marketing_fr:
+    - text: "Le marketing de contenu, c'est attirer des clients en les aidant : articles, vidéos, guides. Pars des questions que tes clients te posent souvent, réponds à une question par contenu, et réutilise chaque contenu sur plusieurs canaux."
+
+  utter_content_marketing_en:
+    - text: "Content marketing means attracting customers by helping them: articles, videos, guides. Start from the questions your customers often ask, answer one question per piece, and reuse each piece on several channels."
+
+  utter_paid_ads_fr:
+    - text: "La publicité payante donne des résultats rapides. Google Ads touche les gens qui cherchent déjà ton produit ; Meta Ads (Facebook, Instagram) fait découvrir ton offre. Commence avec un petit budget, teste 2 ou 3 annonces, et garde celle qui rapporte le plus."
+
+  utter_paid_ads_en:
+    - text: "Paid ads give fast results. Google Ads reaches people already searching for your product; Meta Ads (Facebook, Instagram) makes people discover your offer. Start with a small budget, test 2 or 3 ads, and keep the one that performs best."
+
+  utter_target_audience_fr:
+    - text: "Pour trouver ta cible, décris ton client idéal (persona) : qui il est, son problème, où il s'informe, ce qui le bloque pour acheter. Le plus simple : interroge 5 à 10 de tes meilleurs clients actuels."
+
+  utter_target_audience_en:
+    - text: "To find your target audience, describe your ideal customer (persona): who they are, their problem, where they get information, what stops them from buying. The easiest way: interview 5 to 10 of your best current customers."
+
+  utter_budget_fr:
+    - text: "Un repère courant : 5 à 10 % du chiffre d'affaires pour le marketing, plus si tu es en lancement. Avec un petit budget, mise sur le gratuit (SEO, réseaux sociaux, emailing) et mets l'argent sur un seul canal qui marche déjà."
+
+  utter_budget_en:
+    - text: "A common benchmark: 5 to 10% of revenue for marketing, more if you are launching. With a small budget, focus on free channels (SEO, social media, email) and put the money on a single channel that already works."
+
+  utter_kpi_fr:
+    - text: "Les indicateurs à suivre :\n- Trafic : le nombre de visiteurs.\n- Taux de conversion : visiteurs qui deviennent clients.\n- Coût d'acquisition : dépenses marketing ÷ nouveaux clients.\n- ROI : (gains − coût) ÷ coût.\nChoisis 3 indicateurs et regarde-les chaque mois."
+
+  utter_kpi_en:
+    - text: "The metrics to track:\n- Traffic: the number of visitors.\n- Conversion rate: visitors who become customers.\n- Acquisition cost: marketing spend ÷ new customers.\n- ROI: (gain − cost) ÷ cost.\nPick 3 metrics and check them every month."
+
+  utter_lead_generation_fr:
+    - text: "Pour trouver des clients :\n1. Offre quelque chose d'utile gratuitement (guide, audit, essai).\n2. Demande un email en échange.\n3. Relance avec des emails qui aident.\n4. Propose ton offre.\nPense aussi au bouche-à-oreille : demande des avis et des recommandations."
+
+  utter_lead_generation_en:
+    - text: "To find customers:\n1. Offer something useful for free (guide, audit, trial).\n2. Ask for an email in exchange.\n3. Follow up with helpful emails.\n4. Present your offer.\nAlso think about word of mouth: ask for reviews and referrals."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
