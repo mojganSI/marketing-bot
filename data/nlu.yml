@@ -1,0 +1,426 @@
+version: "3.1"
+
+# Chaque sujet existe en deux versions : _fr (français) et _en (anglais).
+# Pour améliorer le bot, ajoute des phrases d'exemple sous chaque intention.
+
+nlu:
+# ---------- Conversation de base ----------
+- intent: greet_fr
+  examples: |
+    - bonjour
+    - salut
+    - bonsoir
+    - coucou
+    - bonjour à vous
+    - salut le bot
+    - hello bonjour
+    - bonne journée, j'ai une question
+
+- intent: greet_en
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - hi there
+    - hey bot
+    - hello, I have a question
+
+- intent: goodbye_fr
+  examples: |
+    - au revoir
+    - à bientôt
+    - à plus tard
+    - bonne journée
+    - bonne soirée
+    - ciao, à la prochaine
+    - je dois y aller
+    - à demain
+
+- intent: goodbye_en
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - have a nice day
+    - see you soon
+    - bye bye
+    - I have to go
+    - talk to you later
+
+- intent: thanks_fr
+  examples: |
+    - merci
+    - merci beaucoup
+    - super merci
+    - c'est gentil merci
+    - merci pour ton aide
+    - parfait, merci
+    - top, merci bien
+    - je te remercie
+
+- intent: thanks_en
+  examples: |
+    - thanks
+    - thank you
+    - thank you very much
+    - thanks a lot
+    - great, thanks
+    - thanks for your help
+    - perfect, thank you
+    - cheers
+
+- intent: bot_challenge_fr
+  examples: |
+    - es-tu un robot ?
+    - tu es un humain ?
+    - est-ce que je parle à un bot ?
+    - qui es-tu ?
+    - tu es une vraie personne ?
+    - je parle à qui ?
+    - tu es une IA ?
+    - c'est un robot qui répond ?
+
+- intent: bot_challenge_en
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - who are you?
+    - are you a real person?
+    - who am I talking to?
+    - are you an AI?
+    - is this a robot?
+
+- intent: help_fr
+  examples: |
+    - aide
+    - que peux-tu faire ?
+    - de quoi peux-tu parler ?
+    - j'ai besoin d'aide
+    - quels sujets tu connais ?
+    - comment tu peux m'aider ?
+    - montre-moi le menu
+    - tu sais faire quoi ?
+
+- intent: help_en
+  examples: |
+    - help
+    - what can you do?
+    - what can you talk about?
+    - I need help
+    - which topics do you know?
+    - how can you help me?
+    - show me the menu
+    - what are you able to do?
+
+# ---------- Sujets marketing ----------
+- intent: marketing_definition_fr
+  examples: |
+    - c'est quoi le marketing ?
+    - qu'est-ce que le marketing ?
+    - explique-moi le marketing
+    - à quoi sert le marketing ?
+    - définition du marketing
+    - pourquoi faire du marketing ?
+    - le marketing ça veut dire quoi ?
+    - c'est quoi le marketing digital ?
+
+- intent: marketing_definition_en
+  examples: |
+    - what is marketing?
+    - explain marketing to me
+    - what is marketing used for?
+    - definition of marketing
+    - why should I do marketing?
+    - what does marketing mean?
+    - what is digital marketing?
+    - can you define marketing?
+
+- intent: strategy_fr
+  examples: |
+    - comment créer une stratégie marketing ?
+    - je veux un plan marketing
+    - par où commencer mon marketing ?
+    - comment faire un plan marketing ?
+    - quelle stratégie pour mon entreprise ?
+    - aide-moi à construire ma stratégie
+    - quelles sont les étapes d'une stratégie marketing ?
+    - comment lancer mon marketing ?
+
+- intent: strategy_en
+  examples: |
+    - how do I create a marketing strategy?
+    - I want a marketing plan
+    - where do I start with my marketing?
+    - how to build a marketing plan?
+    - which strategy for my company?
+    - help me build my strategy
+    - what are the steps of a marketing strategy?
+    - how do I launch my marketing?
+
+- intent: seo_fr
+  examples: |
+    - comment remonter dans les résultats de Google ?
+    - je veux être mieux classé sur Google
+    - mon site est en bas des résultats de recherche
+    - comment être visible sur les moteurs de recherche ?
+    - c'est quoi le SEO ?
+    - comment améliorer mon référencement ?
+    - comment être premier sur Google ?
+    - mon site n'apparaît pas sur Google
+    - comment avoir plus de visites sur mon site ?
+    - référencement naturel
+    - comment choisir mes mots-clés ?
+    - conseils SEO
+
+- intent: seo_en
+  examples: |
+    - how do I rank higher in search results?
+    - I want to appear at the top of Google
+    - how to be visible on search engines?
+    - my site is low in the search results
+    - what is SEO?
+    - how can I improve my ranking?
+    - how to be first on Google?
+    - my website does not show up on Google
+    - how do I get more visits on my website?
+    - search engine optimization
+    - how do I choose my keywords?
+    - SEO tips
+
+- intent: social_media_fr
+  examples: |
+    - comment utiliser les réseaux sociaux ?
+    - quel réseau social choisir ?
+    - comment avoir plus d'abonnés ?
+    - que publier sur Instagram ?
+    - est-ce que je dois être sur LinkedIn ?
+    - conseils pour les réseaux sociaux
+    - à quelle fréquence publier ?
+    - comment faire connaître ma marque sur TikTok ?
+
+- intent: social_media_en
+  examples: |
+    - how do I use social media?
+    - which social network should I choose?
+    - how do I get more followers?
+    - what should I post on Instagram?
+    - should I be on LinkedIn?
+    - social media tips
+    - how often should I post?
+    - how do I grow my brand on TikTok?
+
+- intent: email_marketing_fr
+  examples: |
+    - personne ne lit mes emails
+    - comment envoyer une campagne email ?
+    - comment faire de l'emailing ?
+    - comment écrire une newsletter ?
+    - mes emails ne sont pas ouverts
+    - comment avoir plus d'inscrits à ma newsletter ?
+    - c'est quoi l'email marketing ?
+    - conseils pour mes campagnes email
+    - comment améliorer mon taux d'ouverture ?
+    - quel objet pour mon email ?
+
+- intent: email_marketing_en
+  examples: |
+    - nobody reads my newsletter
+    - how do I send an email campaign?
+    - how do I do email marketing?
+    - how to write a newsletter?
+    - nobody opens my emails
+    - how do I get more newsletter subscribers?
+    - what is email marketing?
+    - tips for my email campaigns
+    - how can I improve my open rate?
+    - which subject line for my email?
+
+- intent: content_marketing_fr
+  examples: |
+    - c'est quoi le marketing de contenu ?
+    - quel contenu créer ?
+    - est-ce que je dois avoir un blog ?
+    - comment trouver des idées d'articles ?
+    - comment faire un bon contenu ?
+    - idées de contenu pour mon entreprise
+    - faut-il faire des vidéos ?
+    - comment écrire un article de blog ?
+
+- intent: content_marketing_en
+  examples: |
+    - what is content marketing?
+    - what content should I create?
+    - should I have a blog?
+    - how do I find article ideas?
+    - how to make good content?
+    - content ideas for my business
+    - should I make videos?
+    - how do I write a blog post?
+
+- intent: paid_ads_fr
+  examples: |
+    - faut-il payer pour de la publicité ?
+    - comment faire une annonce sponsorisée ?
+    - comment faire de la publicité en ligne ?
+    - est-ce que je dois faire du Google Ads ?
+    - comment marche la pub Facebook ?
+    - publicité payante
+    - comment lancer une campagne de pub ?
+    - ma publicité ne marche pas
+    - Google Ads ou Meta Ads ?
+    - combien coûte une pub en ligne ?
+
+- intent: paid_ads_en
+  examples: |
+    - should I pay for advertising?
+    - how do I make a sponsored post?
+    - how do I advertise online?
+    - should I use Google Ads?
+    - how do Facebook ads work?
+    - paid advertising
+    - how do I launch an ad campaign?
+    - my ads are not working
+    - Google Ads or Meta Ads?
+    - how much does an online ad cost?
+
+- intent: target_audience_fr
+  examples: |
+    - quel est mon client type ?
+    - à qui s'adresse mon offre ?
+    - comment décrire mon client idéal ?
+    - comment trouver ma cible ?
+    - qui sont mes clients ?
+    - c'est quoi un persona ?
+    - comment définir mon client idéal ?
+    - comment connaître mon audience ?
+    - à qui je dois vendre ?
+    - comment faire une étude de marché ?
+    - comment segmenter mes clients ?
+
+- intent: target_audience_en
+  examples: |
+    - who is my typical client?
+    - who is my offer for?
+    - how do I describe my ideal client?
+    - who is my target?
+    - how do I find my target audience?
+    - who are my customers?
+    - what is a persona?
+    - how do I define my ideal customer?
+    - how do I know my audience?
+    - who should I sell to?
+    - how to do market research?
+    - how do I segment my customers?
+
+- intent: budget_fr
+  examples: |
+    - quel budget marketing prévoir ?
+    - combien dépenser en marketing ?
+    - j'ai un petit budget
+    - comment faire du marketing sans argent ?
+    - comment répartir mon budget marketing ?
+    - combien investir en marketing ?
+    - marketing pas cher
+    - quel pourcentage du chiffre d'affaires pour le marketing ?
+
+- intent: budget_en
+  examples: |
+    - what marketing budget should I plan?
+    - how much should I spend on marketing?
+    - I have a small budget
+    - how to do marketing with no money?
+    - how do I split my marketing budget?
+    - how much should I invest in marketing?
+    - cheap marketing
+    - what percentage of revenue for marketing?
+
+- intent: kpi_fr
+  examples: |
+    - est-ce que mes campagnes sont rentables ?
+    - comment savoir si ma pub est rentable ?
+    - comment mesurer la rentabilité de mes actions ?
+    - quelles statistiques analyser ?
+    - comment mesurer mes résultats ?
+    - quels indicateurs suivre ?
+    - c'est quoi un KPI ?
+    - comment calculer mon ROI ?
+    - comment savoir si mon marketing marche ?
+    - c'est quoi le taux de conversion ?
+    - quels chiffres regarder ?
+    - comment suivre mes performances ?
+
+- intent: kpi_en
+  examples: |
+    - are my campaigns profitable?
+    - how do I know if my ads pay off?
+    - how to measure the return of my actions?
+    - which statistics should I analyse?
+    - how do I measure my results?
+    - which metrics should I track?
+    - what is a KPI?
+    - how do I calculate my ROI?
+    - how do I know if my marketing works?
+    - what is the conversion rate?
+    - which numbers should I look at?
+    - how do I track my performance?
+
+- intent: lead_generation_fr
+  examples: |
+    - je cherche de nouveaux clients
+    - comment gagner des clients ?
+    - j'ai besoin de plus de clients
+    - comment obtenir des contacts qualifiés ?
+    - comment trouver des clients ?
+    - comment avoir plus de prospects ?
+    - comment générer des leads ?
+    - je n'ai pas assez de clients
+    - comment vendre plus ?
+    - comment attirer de nouveaux clients ?
+    - comment augmenter mes ventes ?
+    - c'est quoi un tunnel de vente ?
+
+- intent: lead_generation_en
+  examples: |
+    - how do I get more clients?
+    - I need more clients
+    - how to win new clients?
+    - I am looking for new customers
+    - how do I find customers?
+    - how do I get more prospects?
+    - how to generate leads?
+    - I do not have enough customers
+    - how can I sell more?
+    - how do I attract new customers?
+    - how do I increase my sales?
+    - what is a sales funnel?
+
+# ---------- Hors sujet ----------
+- intent: out_of_scope
+  examples: |
+    - quelle est la météo ?
+    - quel temps fait-il demain ?
+    - raconte-moi une blague
+    - quelle heure est-il ?
+    - qui a gagné le match hier ?
+    - donne-moi une recette de gâteau
+    - quelle est la capitale de l'Italie ?
+    - je veux réserver un billet de train
+    - what is the weather?
+    - tell me a joke
+    - what time is it?
+    - who won the game yesterday?
+    - give me a cake recipe
+    - what is the capital of Italy?
+    - I want to book a train ticket
+    - play some music
+    - asdfgh
+    - qsdf jklm
+    - blablabla
+    - xyz xyz
+    - 123456
+    - ghjk tyui
+    - zzzz
+    - lorem ipsum
